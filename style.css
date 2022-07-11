@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea{
+    resize: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Righteous', cursive;
+    overflow-x: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(98, 154, 228);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0px 12px 50px -19px #000000;
+}
+
+
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+li{
+    list-style: none;
+    margin-left: 1rem;
+}
+
+
+.logo{
+    font-weight: 700;
+    color: black;
+}
+
+
+.content-home{
+    font-family: 'Secular One', sans-serif;
+    height: 100vh;
+    background: url("images/fondo-publicidad-chica-adolescente-pensativa-desconcertado_279525-14215.webp") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 8rem;
+    padding-bottom: 2rem;   
+}
+
+h3{
+    font-size:  calc(1em + 4vw);
+    color: #fff;
+    width: 40%;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: 'Righteous', cursive;
+}
+
+.text-main{
+    color: rgb(0, 0, 0);
+    width: 30%;
+    font-size:  calc(1em + 1px);
+    box-shadow: 10px -10px 10px #0000006b;
+}
+
+span{
+    color: #fff;
+    font-size: 3rem;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+/*about*/
+
+.content-about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 0.5s ease-in-out;
+}
+
+.image-about{
+    height: 15em;
+    width: 20em;
+    border-radius: 4%;
+    overflow: hidden;
+}
+
+.cont-text-about{
+    font-size:  calc(1em + 7vw);
+    font-family: 'Righteous', cursive;
+    
+}
+
+.text-title-second{
+    color:  rgb(98, 154, 228);
+    font-family: 'Secular One', sans-serif;
+}
+
+.cont-element-first-about{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.text-about-secondary{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cont-text-about-element{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15em;
+    width: 22rem;
+    margin-left: 1rem;
+    text-align: justify;
+    padding-right: 1rem ;
+    margin-top:1rem;
+    flex-wrap: wrap;
+    box-shadow: -10px 10px #73b9ca6b;
+}
+
+.cont-element-second-about{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content-about{
+    padding-top: 2rem;
+}
+
+/*service*/
+
+.icon-service{
+    height: 3em;
+    width: 3em;
+}
+
+.text-service-title{
+    text-align: center;
+    font-size:  calc(1em + 10vw);
+    color: #000000;
+    font-family: 'Secular One', sans-serif;
+}
+
+.text-spacial{
+   color:  rgb(98, 154, 228);
+   font-size:  calc(1em + 5vw);
+}
+
+#service{
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    border-top: 1px rgb(98, 154, 228) solid;
+}
+
+.content-services-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: scale(0.9);
+    transform: translateY(-40px);
+    transition: 0.7s ease-in-out;
+}
+
+.cont-service{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(98, 154, 228);
+    height: 8em;
+    width: 10rem;
+    border-radius: 4%;
+    text-align: center;
+    margin: 1rem 5rem;
+}
+
+.text-service{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.content-customer{
+    padding-top: 5rem;
+    font-size: calc(1rem + 3vw);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(98, 154, 228);
+    color: #fff;
+    padding-bottom: 5rem;
+    margin-bottom: 3rem
+}
+
+.cont-customer{
+    text-align: center;
+}
+
+.text-customer-number{
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+}
+
+.content-contact{
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    transform: scale(0.9);
+    transform: translateX(100px);
+    transition: 0.7s ease-in-out;
+}
+
+
+form{
+    width: 50%;
+}
+.content-tex-contact{
+    font-size:  calc(1em + 8vw);
+}
+
+.text-contact{
+    color:  rgb(98, 154, 228);
+}
+
+form p{
+    font-size: calc(1rem + 3vw);
+}
+
+input{
+    height: 3rem;
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+}
+
+footer{
+    color: #fff;
+    margin-top: 2rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(98, 154, 228);
+    box-shadow: 0px 12px 50px -19px #000000;
+    position: relative;
+    bottom: 0;
+}
+
+.menu{
+    height: 1.4rem;
+    display: none;
+    cursor: pointer;
+}
+
+.menu:active{
+    padding: 0.1rem;   
+}
+
+.close-menu{
+    display: none;
+    border-radius: 50%;
+    padding: 1rem;
+    color: #fff;
+}
+
+.visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media (max-width: 1194px) {
+    .content-home{
+        padding-left: 1rem;
+    }
+
+    .cont-text-about{
+        display: flex;
+    }
+  }
+
+@media (max-width: 800px) {
+    .content-home{
+        padding-left: 1rem;
+    }
+
+    .cont-element-first-about{
+        flex-direction: column;
+    }
+
+    .cont-element-second-about{
+        flex-direction: column;
+    }
+
+    .cont-text-about-element{
+        box-shadow: 1px -1px #73b9ca6b;
+    }
+    
+    .cont-text-about{
+        font-size:  calc(1em + 5vw);        
+    }
+
+  }
+
+  @media  (max-width: 630px){
+    .menu{
+        display: block;
+    }
+    .nav{
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        background-color: #000000c0;
+        width: 180px;
+        transform: translateX(200px);
+        transition: 0.3s ease-in-out;
+    }
+    .menu-act{
+        visibility: visible;
+        transform: translateX(0px);
+    }
+    .close-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    li{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    li:hover{
+        background-color: rgba(0, 255, 255, 0.226);
+    }
+
+    .close-menu:hover{
+        background-color: #00000060;
+        transition: 0.3s ease-in-out;
+    }
+
+    .content-home{
+        background: url("images/fondo-publicidad-chica-adolescente-pensativa-desconcertado_279525-14215.webp") no-repeat left center;
+        background-size: cover;
+        
+    }
+
+    .image-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-contact{
+        padding-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+  }
